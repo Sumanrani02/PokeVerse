@@ -73,7 +73,7 @@ useEffect(() => {
             <Link
               to={value.linkValue}
               key={index}
-              target={value.title==="GameFi"||value.title==="Evozone"||value.title==="NFT"||value.title==="News"?"_blank":""}
+              target={value.title==="Gamefy"||value.title==="Pokiezone "||value.title==="NFT"||value.title==="News"?"_blank":""}
               onClick={() => { 
                 if (value.title === "Manga") {
                   setVideo(!video);
@@ -89,7 +89,7 @@ useEffect(() => {
                   <img
                     className="w-full about_card_img duration-500 h-full object-cover"
                     src={value.card_bg}
-                    alt="GameFi"
+                    alt="Gamefy"
                   />
                   <p className="text-white absolute top-1/2 left-1/2 font-bold uppercase md:text-4xl sm:text-3xl -translate-x-1/2 -translate-y-1/2">
                     {value.title}
@@ -98,7 +98,7 @@ useEffect(() => {
                   <img
                     className={`absolute bottom-0 gamefi_character translate-y-full duration-500 ${value.className}`}
                     src={value.character_img}
-                    alt="gamefi"
+                    alt="Gamefy"
                   />
                 </div>
               </div>
@@ -127,7 +127,7 @@ useEffect(() => {
             </div>
           } */}
           {(modalImage && modalImage.title === "Dashboard") ||
-            (modalImage && modalImage.title === "EvoVerse") ||
+            (modalImage && modalImage.title === "Pokieverse ") ||
             (modalImage && modalImage.title === "MERCHANDISE") ? (
               <img
               className={`rounded-xl ${modalImage&&modalImage.title === "MERCHANDISE" ? "w-[310px] custom-xsm:w-full custom-xsm:h-full sm:w-[500px] sm:h-[500px] 3xl:w-[600px] 3xl:h-[600px]": "w-full h-full"}`}

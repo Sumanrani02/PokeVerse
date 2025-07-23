@@ -8,7 +8,7 @@ const GetInTouchForm = ({ status, message, onSubmitted }) => {
     firstName: "",
     lastName: "",
     email: "",
-    subject: "",
+    contactNo: "",
     message: "",
     companyName: "",
   });
@@ -21,7 +21,7 @@ const GetInTouchForm = ({ status, message, onSubmitted }) => {
       formDetail.firstName !== "" &&
       formDetail.lastName !== "" &&
       formDetail.email !== "" &&
-      formDetail.subject !== "" &&
+      formDetail.contactNo !== "" &&
       formDetail.message !== ""
     ) {
       setLoading(true);
@@ -29,7 +29,7 @@ const GetInTouchForm = ({ status, message, onSubmitted }) => {
         EMAIL: formDetail.email,
         LNAME: formDetail.lastName,
         FNAME: formDetail.firstName,
-        SUBJECT: formDetail.subject,
+        CONTACTNO: formDetail.contactNo,
         MESSAGE: formDetail.message,
         COMPANYNA: formDetail.companyName,
       });
@@ -41,7 +41,7 @@ const GetInTouchForm = ({ status, message, onSubmitted }) => {
         firstName: "",
         lastName: "",
         email: "",
-        subject: "",
+        contactNo: "",
         companyName: "",
         captchaCode: "",
         message: "",
@@ -118,15 +118,15 @@ const GetInTouchForm = ({ status, message, onSubmitted }) => {
           <div className="sm:pl-1.5 w-full">
             <input
               type="tel"
-              value={formDetail.subject}
+              value={formDetail.contactNo}
               onChange={(e) => {
                 setFormDetail({
                   ...formDetail,
-                  subject: e.target.value,
+                  contactNo: e.target.value,
                 });
               }}
               required
-              placeholder="Subject"
+              placeholder="Contact Number"
               className="form_input text-xs xl:text-sm w-full outline-none border border-1 border-transparent hover:border-blue focus:border-blue text-white  py-4 px-3.5 placeholder:text-white placeholder:uppercase font-poppins placeholder:opacity-50"
             />
           </div>
@@ -166,20 +166,17 @@ const GetInTouchForm = ({ status, message, onSubmitted }) => {
             />
           </div>
         </div>
+        
 
-        <div className="mt-4 mb-[33px]">
-          <ReCAPTCHA
-            className="recaptcha-box w-full mr-16 sm:mr-0"
-            sitekey="6LdGbGwkAAAAAE8TmVdjmBo7ZiFGG7c4KD9EwVUw"
-            onChange={(value) => setRecaptchaCodeVerify(value)}
-          />
-        </div>
         <button
           disabled={reCaptchaCodeVerify === null ? true : false}
           type="submit"
-          className=" blue-btn-shadow hover:scale-105 transition-all ease-in-out duration-300 py-[5px] px-[21px] bg-[#2253F5] rounded-[39px] text-[14px] sm:text-base md:text-lg lg:text-xl text-white font-bold font-poppins  w-full "
+          className=" group relative w-[50%] inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-blue-900 px-6 font-medium text-neutral-50"
         >
+          <span class="absolute h-56 w-full rounded-full bg-blue-500 transition-all duration-300 group-hover:h-0 group-hover:w-0"></span>
+         <span class="relative">
           {isLoading ? "Loading..." : " Submit"}
+          </span>
         </button>
       </form>
     </>

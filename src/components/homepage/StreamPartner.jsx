@@ -126,7 +126,7 @@ const StreamPartner = ({ streamPartnerRef,advisorRef }) => {
                 </div>
               </div>
               <div className="flex flex-col items-center team_zoom justify-between">
-              <div className= "border border-4 lg:border-8 border-yellow-600 border-solid w-[200px] lg:w-[250px] h-[200px] lg:h-[300px] flex justify-center items-center">
+              <div className= " border-4 lg:border-8 border-yellow-600 border-solid w-[200px] lg:w-[250px] h-[200px] lg:h-[300px] flex justify-center items-center">
                   <p className="font-raleway whitespace-normal break-words uppercase font-bold text-center text-[100px] xl:text-[160px] text-yellow-600">
                     ?
                   </p>

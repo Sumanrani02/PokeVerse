@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import nav_logo from "../../assets/images/webp/header-logo.webp";
-import Callisto_logo from "../../assets/images/png/Devomon_Callisto_logo.png";
+import Callisto_logo from "../../assets/images/png/Callisto_logo2.png";
 import { Disclosure } from "@headlessui/react";
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -197,7 +197,7 @@ const Header = () => {
                       rel="noopener noreferrer"
                     >
                       <p className=" font-poppins text-xs xl:text-base text-white mb-2 hover:text-[#2253F5] transition-all duration-200">
-                        GameFi
+                      Gamefy 
                       </p>
                     </a>
                     <a
@@ -206,7 +206,7 @@ const Header = () => {
                       href="https://evozone.devomon.io/"
                     >
                       <p className=" font-poppins text-xs xl:text-base text-white hover:text-[#2253F5] mt-2 transition-all duration-200 mb-4">
-                        Evozone
+                       Pokiezone 
                       </p>
                     </a>
                     <Link
@@ -215,7 +215,8 @@ const Header = () => {
                       onClick={() => setNav(!Nav)}
                     >
                       <p className=" font-poppins text-xs xl:text-base text-white mb-4 hover:text-[#2253F5] transition-all duration-200">
-                        NFTs
+                         Nft 
+
                       </p>
                     </Link>
                     <span
@@ -229,7 +230,7 @@ const Header = () => {
                     </span>
                     <span onClick={() => clickHandler("EvoVerse")}>
                       <p className=" font-poppins text-xs xl:text-base text-white mb-0 hover:text-[#2253F5] mt-4 transition-all duration-200">
-                        EvoVerse
+                       Pokieverse
                       </p>
                     </span>
                     <a onClick={() => setVideo(!video)}>
@@ -282,7 +283,7 @@ const Header = () => {
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                   href="#"
                 >
-                  Staking
+                   Stake now
                 </Link>
               </li>
               <li className=" flex items-center cursor-pointer hover:bg-[#ffffff] hover:bg-opacity-10 group h-[95px] xl:px-4 px-2 -skew-x-12 duration-200 relative">
@@ -295,7 +296,7 @@ const Header = () => {
                         to={"https://team.devomon.io"}
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins mb-2 xl:mb-4">
-                          Core Team
+                          Core Members
                         </p>
                       </Link>
                     </span>
@@ -313,7 +314,7 @@ const Header = () => {
                         to={"https://partners.devomon.io"}
                       >
                         <p className="font-normal text-base text-white hover:text-[#2253F5] transition-all duration-200 cursor-pointer font-poppins">
-                          Partners
+                           Investors
                         </p>
                       </Link>
                     </span>
@@ -413,7 +414,7 @@ const Header = () => {
                   to={"https://medium.com/@DevomonOfficial"}
                   className="skew-x-12 font-normal duration-200 group-hover:text-[#2253F5] text-white me-2 whitespace-nowrap font-poppins"
                 >
-                  News
+                Blogs
                 </Link>
               </li>
             </ul>
@@ -429,7 +430,7 @@ const Header = () => {
                     PLAY
                   </span>
                   <img
-                    className="cursor-pointer lg:w-[40px] w-[32px] lg:h-[40px] h-[32px] hover:scale-[1.05] duration-300 p-[3px]"
+                    className="cursor-pointer lg:w-[40px] w-[32px] lg:h-[40px] h-[32px] hover:scale-[1.05] duration-300 p-[3px] border rounded-md border-white"
                     src={Callisto_logo}
                     alt="Callisto_logo"
                   />

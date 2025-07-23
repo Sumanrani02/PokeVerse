@@ -262,7 +262,7 @@ const Hero = () => {
               })}
             </div> */}
             <h2 className="text-white text-base leading-[114.32%] font-bold font-raleway my-5 sm:mt-6 sm:mb-9 max-w-[288px] sm:max-w-full mx-auto drop-shadow-lg">
-            Once Upon A Time...
+           Own. Train. Battle. Earn
             </h2>
             <div className="flex items-center justify-center">
             <Link to={"https://story.devomon.io/"} target="_blank" className="bg-[#2253F5] text-white font-poppins text-xl font-bold

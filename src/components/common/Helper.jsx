@@ -51,24 +51,24 @@ import energeticTeam2 from "../../assets/images/webp/energeticteam5.webp";
 import energeticTeam3 from "../../assets/images/webp/energeticTeamgirl.webp";
 import energeticTeam4 from "../../assets/images/webp/energeticTeam4.webp";
 // =====================================================================================
-import gamefi_bg from "../../assets/images/homepageImages/webp/gamefi_bg.webp";
-import evozone_bg from "../../assets/images/homepageImages/webp/evozone_bg.webp";
-import nft_bg from "../../assets/images/homepageImages/webp/nft_bg.webp";
-import dashboard_bg from "../../assets/images/homepageImages/webp/dashboard_bg.webp";
-import evoVerse_bg from "../../assets/images/homepageImages/webp/evoverse_bg.webp";
-import manga_bg from "../../assets/images/homepageImages/webp/manga_bg.webp";
-import anime_bg from "../../assets/images/homepageImages/webp/anime_bg.webp";
-import merch_bg from "../../assets/images/homepageImages/webp/merch_bg.webp";
-import coming_soon_bg from "../../assets/images/homepageImages/webp/news.webp";
+import gamefi_bg from "../../assets/images/homepageImages/webp/bg-img1.webp";
+import evozone_bg from "../../assets/images/homepageImages/webp/bg-img8.webp";
+import nft_bg from "../../assets/images/homepageImages/webp/bg-img4.webp";
+import dashboard_bg from "../../assets/images/homepageImages/webp/bg-img3.webp";
+import evoVerse_bg from "../../assets/images/homepageImages/webp/bg-img5.webp";
+import manga_bg from "../../assets/images/homepageImages/webp/bg-img6.webp";
+import anime_bg from "../../assets/images/homepageImages/webp/bg-img7.webp";
+import merch_bg from "../../assets/images/homepageImages/webp/bg-img2.webp";
+import coming_soon_bg from "../../assets/images/homepageImages/webp/bg-img9.webp";
 // ================
-import gamefi_character from "../../assets/images/abc.png";
-import evozone_character from "../../assets/images/abc2.png";
-import nft_character from "../../assets/images/abc3.png";
-import dashboard_character from "../../assets/images/abc4.png";
-import evoVerse_character from "../../assets/images/abc5.png";
-import manga_character from "../../assets/images/abc6.png";
+import gamefi_character from "../../assets/images/xyzz.png";
+import evozone_character from "../../assets/images/xyz4.png";
+import nft_character from "../../assets/images/xyz3.png";
+import dashboard_character from "../../assets/images/xyz6.png";
+import evoVerse_character from "../../assets/images/xyz2.png";
+import manga_character from "../../assets/images/xyz7.png";
 import anime_character from "../../assets/images/abc7.png";
-import merch_character from "../../assets/images/abc8.png";
+import merch_character from "../../assets/images/xyz5.png";
 // ==== faq ====
 import latest_news_slider_img from "../../assets/images/homepageImages/webp/latest_news_slides.webp";
 import MerchImage from "../../assets/images/png/Brand_peak.png"
@@ -558,16 +558,16 @@ export const energeticTeamData = [
 export const AboutCardData = [
   {
     card_bg: gamefi_bg,
-    title: "GameFi",
+    title: "Gamefy",
     character_img: gamefi_character,
     linkValue:"https://callisto.devomon.io/",
     className: "w-[45%] xs:w-[32%] sm:w-[27%] md:w-[24%] lg:w-[22%] xl:w-[19%] right-[6%]",
   },
   {
     card_bg: evozone_bg,
-    title: "Evozone",
+    title: "Pokiezone ",
     character_img: evozone_character,
-    className: "w-[90%] xs:w-[60%] sm:w-[55%] md:w-[45%] lg:w-[40%] 2xl:w-[40%] left-[0%]",
+    className: "w-[45%] xs:w-[32%] sm:w-[27%] md:w-[24%] lg:w-[22%] xl:w-[19%] left-[6%]",
     linkValue:"https://evozone.devomon.io/"
   },
   {
@@ -581,12 +581,12 @@ export const AboutCardData = [
     card_bg: dashboard_bg,
     title: "Dashboard",
     character_img: dashboard_character,
-    className: "w-[95%] min-[576px]:w-[80%] xs:w-[70%] sm:w-[60%] md:w-[45%] xl:w-[40%] xs:!left-[0%] -left-[9%]",
+    className: "w-[45%] xs:w-[32%] sm:w-[27%] md:w-[24%] lg:w-[22%] xl:w-[19%] left-[6%]",
     popupImage:dashboard,
   },
   {
     card_bg: evoVerse_bg,
-    title: "EvoVerse",
+    title: "Pokieverse ",
     character_img: evoVerse_character,
     className: "w-[45%] min-[576px]:w-[35%] xs:w-[30%] sm:w-[26%] md:w-[21%] lg:w-[20%] xl:w-[19%] 2xl:w-[19%] min-[576px]:right-[10%] right-0",
     popupImage:evoverse,
@@ -595,7 +595,7 @@ export const AboutCardData = [
     card_bg: manga_bg,
     title: "Manga",
     character_img: manga_character,
-    className: "w-[50%] min-[576px]:w-[35%] xs:w-[30%] sm:w-[26%] md:w-[23%] lg:w-[22%] xl:w-[20%] 2xl:w-[19%] min-[576px]:left-[8%] -left-[5%]",
+    className: "w-[45%] min-[576px]:w-[35%] xs:w-[30%] sm:w-[26%] md:w-[21%] lg:w-[20%] xl:w-[19%] 2xl:w-[19%] min-[576px]:left-[10%] -left-[0%]",
     popupPara:"Coming Soon",
   },
   {
@@ -611,11 +611,11 @@ export const AboutCardData = [
     title: "MERCHANDISE",
     character_img: merch_character,
     popupImage:MerchImage,
-    className: "w-[100%] min-[576px]:w-[80%] xs:w-[70%] sm:w-[60%] md:w-[53%] lg:w-[45%] xl:w-[43%] -left-[7%] xs:left-[1%]",
+    className: "w-[50%] min-[576px]:w-[40%] xs:w-[42%] sm:w-[40%] md:w-[40%] lg:w-[35%] xl:w-[30%] -left-[7%] xs:left-[1%]",
   },
   {
     card_bg: coming_soon_bg,
-    title: "News",
+    title: "Blogs",
     className: "hidden",
     linkValue:"https://medium.com/@DevomonOfficial",
   },
